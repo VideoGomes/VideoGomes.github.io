@@ -33,11 +33,22 @@
         height: 100vh;
 
     }
-</style>
 
+    img.freshito:hover {
+        transform: scale(2.0);
+        cursor: pointer;
+    }
+</style>
+<script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+</script>
 <body>
     <div class="container">
-        <img class="freshito" src="./public/Fresh.png" alt="Big Fresh">
+        <img class="freshito" src="./public/Fresh.png" alt="Big Fresh" onclick="play()">
+        <audio id="audio" src="./public/fresh_fala_vsf.mp3"></audio>
     </div>
 </body>
 
