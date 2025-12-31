@@ -23,6 +23,10 @@ img {
   width: 100px;
 }
 
+h1 {
+  color: white;
+}
+
 #root {
   display: flex;
   justify-content: center;
