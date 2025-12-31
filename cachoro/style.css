@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 3rem;
+
+  background: url("./assets/fogo.png");
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: sans-serif;
+}
+
+img {
+  width: 120px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cachoro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;  
+  flex-direction: column;
+
+  color: white;
+}
