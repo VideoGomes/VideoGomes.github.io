@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="Fresh" property="og:title" />
+    <meta content="Vaaaasifudeeeeeeee" property="og:description" />
+    <meta content="https://videogomes.com/fresh" property="og:url" />
+    <meta content="./public/Fresh.png" property="og:image" />
+    <meta content="#3E4095" data-react-helmet="true" name="theme-color" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh fala vsf</title>
+    <link rel="shortcut icon" type="image/png" href="./public/Fresh.png">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(./public/Fresh.png);
+            background-repeat: round;
+            background-size: 64px;
+        }
+
+        .container {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+
+        }
+
+        .freshito {
+            transform: scale(0.5);
+
+            border-radius: 22px;
+
+            box-shadow: -1px -1px 24px #006eff, -1px 1px 24px #006eff, 1px -1px 24px #006eff, 1px 1px 24px #006eff inset;
+
+            transition: transform 0.2s ease, box-shadow 0.1s ease;
+        }
+
+        .freshito:hover {
+            cursor: pointer;
+
+            box-shadow: -1px -1px 4px #006eff, -1px 1px 4px #006eff, 1px -1px 4px #006eff, 1px 1px 4px #006eff inset;
+
+            transform: scale(0.65);
+
+            transition: transform 0.3s ease, box-shadow 0.2s ease;
+        }
+
+
+        .freshito_vsf {
+            cursor: none;
+            
+            border-radius: 22px;
+
+            transform: scale(1.0) rotate(1800deg);
+
+            transition: transform 0.8s ease;
+        }
+    </style>
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            var fresh = document.getElementsByClassName("freshito")[0];
+
+            audio.play();
+
+            fresh.classList.add("freshito_vsf");
+            fresh.classList.remove("freshito");
+
+            document.title = "Vsf";
+
+            audio.addEventListener("ended", (event) => {
+                console.log("Vaaasifudeeeee");
+
+                fresh.classList.remove("freshito_vsf");
+                fresh.classList.add("freshito");
+
+                document.title = "Fresh fala vsf";
+            });
+        }
+    </script>
+    <div class="container">
+        <img class="freshito" src="./public/Fresh.png" alt="Big Fresh" onclick="play()">
+        <audio id="audio" src="./public/fresh_fala_vsf.mp3"></audio>
+    </div>
+</body>
+
+</html>
