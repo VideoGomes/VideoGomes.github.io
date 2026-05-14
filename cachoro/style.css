@@ -53,6 +53,10 @@ h1 {
   text-align: center;
 }
 
+.derrotado {
+  filter: grayscale(1);
+}
+
 @media (max-width: 900px) {
   html {
     font-size: 65%;
