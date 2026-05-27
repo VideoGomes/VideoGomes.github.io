@@ -54,7 +54,7 @@ h1 {
 }
 
 .derrotado {
-  filter: grayscale(0.85);
+  filter: grayscale(0.95);
 }
 
 @media (max-width: 900px) {
